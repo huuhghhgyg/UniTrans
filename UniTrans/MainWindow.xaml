@@ -1,0 +1,22 @@
+﻿<Window x:Class="UniTrans.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniTrans"
+        mc:Ignorable="d"
+        Title="UniTrans" Height="321.334" Width="504.334" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBox" Height="109" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,34,10,0" TextChanged="textBox_TextChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="Wrap" Text="字符串" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,148,0,0" TextWrapping="Wrap" Text="Unicode" VerticalAlignment="Top"/>
+        <TextBox x:Name="uniBox" TextWrapping="Wrap" Margin="10,168,10,15" TextChanged="uniBox_TextChanged"/>
+        <TextBlock x:Name="info" HorizontalAlignment="Right" Margin="0,10,11,0" TextWrapping="Wrap" Text="状态:就绪" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chk1" Content="UniToString" HorizontalAlignment="Right" Margin="0,149,11,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cp" Content="Copy?" HorizontalAlignment="Right" Margin="0,149,104,0" VerticalAlignment="Top" IsChecked="True"/>
+
+    </Grid>
+</Window>
